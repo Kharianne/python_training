@@ -36,6 +36,6 @@ if __name__ == "__main__":
     while True:
         player_guess = input("What's your option: ")
         while player_guess not in Game.OPTIONS:
-            player_guess = input("Wrong option, options are: rock, paper, scissors. Try again. Your option: ")
+            player_guess = input(f"Wrong option, options are: {Game.OPTIONS}. Try again. Your option: ")
         game = Game(player_guess)
         game.get_results()
